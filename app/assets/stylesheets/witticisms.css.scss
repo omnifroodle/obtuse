@@ -1,3 +1,14 @@
 // Place all the styles related to the witticisms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.witticism {
+  font-size: 6em;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+
+.witticisms {
+  width: 100%;
+}

@@ -1,9 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Quote:</strong>
-  <%= @witticism.quote %>
-</p>
+<h1 class="witticism"><%= @witticism.quote %></h1>
 
 <%= link_to 'Edit', edit_witticism_path(@witticism) %> |
 <%= link_to 'Back', witticisms_path %>
