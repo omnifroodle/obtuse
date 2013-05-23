@@ -2,13 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.witticism-container {
+    display: table;
+    height: 600px;
+    width: 100%;
+}
+
 .witticism {
   font-size: 6em;
+  line-height: 0.9;
   letter-spacing: -3px;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 
 .witticisms {
   width: 100%;
 }
+
