@@ -1,0 +1,27 @@
+<h1>Listing witticisms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Quote</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @witticisms.each do |witticism| %>
+      <tr>
+        <td><%= witticism.quote %></td>
+        <td><%= link_to 'Show', witticism %></td>
+        <td><%= link_to 'Edit', edit_witticism_path(witticism) %></td>
+        <td><%= link_to 'Destroy', witticism, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Witticism', new_witticism_path %>

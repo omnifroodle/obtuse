@@ -1,0 +1,2 @@
+module WitticismsHelper
+end
