@@ -7,7 +7,7 @@ class Markov
     strs = Array(strs)
     words = strs.flatten.join(" ")
 
-#    words = words.gsub(/[\.\?\(\)\[\]\,\-`]/, " ")
+    words = words.gsub(/[\.\?\(\)\[\]\,\-`"]/, " ")
     words = words.split
     words = words.map(&:downcase)
     len = words.count - 1
