@@ -5,6 +5,7 @@ d = File.expand_path File.dirname(__FILE__)
 strategies_array = File.readlines(File.join(d, 'oblique_strategies.txt'))
 herzog_array = File.readlines(File.join(d, 'herzog.txt'))
 bjork_array = File.readlines(File.join(d, 'bjork.txt'))
+
 random_design_array = File.readlines(File.join(d, "random_design.txt"))
 rams_array = File.readlines(File.join(d, "rams.txt"))
 
@@ -27,6 +28,9 @@ puts
   end
 end
 
+sagmeister_array = File.readlines(File.join(d, 'sagmeister.txt'))
+
+
 puts "ENO"
 s = Markov.new(strategies_array)
 10.times do
@@ -46,7 +50,7 @@ end
 puts "", "Eno + Herzog + bjork"
 hs = Markov.new(strategies_array | herzog_array | bjork_array)
 10.times do
-  print "\t\t\t", hs.gimme(6), "\n"
+  print "\t\t", hs.gimme(6), "\n"
 end
 
 puts "", "Eno + Herzog"
@@ -54,6 +58,7 @@ hs = Markov.new(strategies_array | herzog_array )
 10.times do
   print "\t\t", hs.gimme(6), "\n"
 end
+
 
 
 puts "", "Dieter Rams"
@@ -75,3 +80,17 @@ do_it("everything", strategies_array | herzog_array | bjork_array | random_desig
 
 
 do_haiku("everything", strategies_array | herzog_array | bjork_array | random_design_array | rams_array)
+
+puts "", "Sagmeister"
+hs = Markov.new(sagmeister_array)
+10.times do
+  print "\t\t", hs.gimme(6), "\n"
+end
+
+puts "", "Sagmeister + Eno"
+hs = Markov.new(sagmeister_array | strategies_array)
+10.times do
+  print "\t\t\t", hs.gimme(6), "\n"
+end
+
+

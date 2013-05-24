@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .witticism-container {
-    display: table;
-    height: 600px;
-    width: 100%;
+  display: table;
+  height: 700px;
+  width: 100%;
 }
 
 .witticism {
@@ -22,5 +22,25 @@
 
 .witticisms {
   width: 100%;
+  td {
+    font-size: 16px;
+  }
 }
 
+.links {
+  text-align: center;
+  a {
+    background: #000;
+    color: #fff;
+    padding: 0.5em 3em;
+    border-radius: 1.4em;
+    font-weight: bold;
+  }
+}
+
+.edit_witticism {
+
+  .witticism_quote .text {
+    border: 0;
+  }
+}

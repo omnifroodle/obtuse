@@ -2,6 +2,7 @@
 <div class="witticism-container">
   <h1 class="witticism animated fadeInUp"><%= @witticism.quote %></h1>
 </div>
-
-<%= link_to 'Edit', edit_witticism_path(@witticism) %> |
-<%= link_to 'Back', witticisms_path %>
+<div class="links">
+  <%= link_to raw('&larr;'), witticisms_path %>
+  <%= link_to 'Edit', edit_witticism_path(@witticism) %>
+</div>
