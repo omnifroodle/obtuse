@@ -21,6 +21,9 @@ class WitticismsController < ApplicationController
   def edit
   end
 
+  def random
+  end
+
   # POST /witticisms
   # POST /witticisms.json
   def create
