@@ -21,10 +21,10 @@ def do_haiku(label, arrays)
   puts label
   m = Markov.new(arrays)
   10.times do
-    print "\t", m.gimme(4), "\n"
     print "\t", m.gimme(5), "\n"
-    print "\t", m.gimme(4), "\n"
-puts
+    print "\t", m.gimme(7), "\n"
+    print "\t", m.gimme(5), "\n"
+    puts
   end
 end
 
