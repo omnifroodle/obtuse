@@ -30,7 +30,7 @@ class Markov
       len = words.count - 1
       words.each_with_index do |word, index|
         if index < len
-          foo = OpenStruct.new({:text => words[index + 1], :source => k})
+          foo = OpenStruct.new({:text => words[index + 1], :source => k, :index => index})
           word_hash[word] << foo
         end
       end
