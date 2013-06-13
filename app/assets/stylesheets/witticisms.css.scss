@@ -46,3 +46,34 @@ body { margin: 20px 0; }
     border: 0;
   }
 }
+
+
+
+.random-quote {
+  font-size: 9.2em;
+  font-weight: 300;
+
+  span {
+    background: rgba(0,0,0,0.2);
+    padding: 5px 30px;
+    display: inline-block;
+    color: rgba(0,0,0,0);
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+  }
+
+  .herzog {
+    background-color: red;
+  }
+
+  .oblique_strategies {
+    background: #000;
+       -webkit-text-stroke-color: white;
+
+  }
+
+  .random_design {
+    background: #555;
+  }
+
+}
