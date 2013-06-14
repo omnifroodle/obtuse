@@ -48,8 +48,21 @@ body { margin: 0; background: #777;}
 }
 
 
+@mixin quote_text($background, $stroke_color, $content){
+  background: $background;
+  &:before {
+    position: absolute;
+    opacity: 0.4;
+    top: -72px;
+    left: 0;
+    -webkit-text-stroke-color: $stroke_color;
+    content:  $content;
+  }
+}
+
 
 .random-quote {
+  text-rendering: optimizeLegibility;
   margin-top: 13.3%;
   font-size: 9.2em;
   font-weight: 300;
@@ -59,62 +72,50 @@ body { margin: 0; background: #777;}
     background: rgba(0,0,0,0.2);
     padding: 30px 30px -20px;
     display: inline;
-    color: rgba(0,0,0,0);
-  -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: black;
+    color: rgba(0,0,0,0.0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     position: relative;
   }
 
   .herzog {
-    background: rgba(#000fff, 0.8);
-    -webkit-text-stroke-color: white;
-   &:before {
-    position: absolute;
-    opacity: 0.4;
-    top: -72px;
-    left: 0;
-        -webkit-text-stroke-color: blue;
-
-    content:   "Herzog";
-   }
+    @include quote_text(rgba(#000fff, 0.7), blue, "Herzog");
   }
 
   .oblique_strategies {
-    background: rgba(#38D8D8, 0.8);
-       -webkit-text-stroke-color: white;
-   &:before {
-    position: absolute;
-    opacity: 0.4;
-    top: -72px;
-    left: 0;
-        -webkit-text-stroke-color: blue;
-
-    content:   "Oblique";
-   }
-  }
+    @include quote_text(rgba(#38D8D8, 0.7), blue, "Oblique");
+ }
 
   .random_design {
-    background: rgba(#FF976B, 0.8);
-    &:before {
-      position: absolute;
-      opacity: 0.4;
-      top: -72px;
-      left: 0;
-          -webkit-text-stroke-color: blue;
-
-      content:   "Rams";
-    }
+    @include quote_text(rgba(#FF976B, 0.7), blue, "Rams");
   }
   .sagmeister {
-    background: rgba(255, 0, 31, 0.8);
-   &:before {
-      position: absolute;
-      opacity: 0.4;
-      top: -72px;
-      left: 0;
-          -webkit-text-stroke-color: blue;
+    @include quote_text(rgba(255, 0, 31, 0.7), blue, "Sagmeister");
+  }
 
-      content:   "Sagmeister";
-    }
+  .bjork {
+    @include quote_text(rgba(red, 0.7), yellow, "Bjork");
+  }
+  .thompson {
+    @include quote_text(rgba(17, 184, 17,0.7), white, "Thompson");
+  }
+}
+
+
+#hidden-dragon { display: none; }
+
+.buttons {
+  margin: 12% 0 0;
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  a {
+    font-size: 1.2em;
+    color: #fff;
+    width: 120px;
+    display: inline-block;
+    text-align: center;
   }
 }

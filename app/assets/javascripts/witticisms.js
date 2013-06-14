@@ -14,4 +14,5 @@ if ($random.length) {
 function createWitticism(){
   var foo = $("#hidden-dragon").text();
   $.post("/witticisms", {"witticism": {"quote": foo}});
+  return false;
 }
