@@ -1,3 +1,9 @@
+
+<div id='hidden-dragon'>
+  <%= @quote.map{|x| x.text}.join(" ") %>
+</div>
+
+
 <h1 class="random-quote">
 
   <% o = @quote.pop %>
@@ -22,9 +28,7 @@
 
 </h1>
 
-<div id='hidden-dragon'>
-  <%= @quote.map{|x| x.text}.join(" ") %>
-</div>
+
 
 <ul class="buttons">
 <li><%= link_to "Save", '#', :onclick => 'createWitticism()' %></li>
