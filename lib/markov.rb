@@ -7,13 +7,13 @@ class Markov
   def srcs
     d = File.expand_path File.dirname(__FILE__)
     {
-
-#      :bjork => File.readlines(File.join(d, 'bjork.txt')),
+      :bjork => File.readlines(File.join(d, 'bjork.txt')),
       :herzog => File.readlines(File.join(d, 'herzog.txt')),
       :oblique_strategies => File.readlines(File.join(d, 'oblique_strategies.txt')),
       :rams => File.readlines(File.join(d, "rams.txt")),
       :random_design => File.readlines(File.join(d, "random_design.txt")),
-      :sagmeister => File.readlines(File.join(d, "sagmeister.txt"))
+      :sagmeister => File.readlines(File.join(d, "sagmeister.txt")),
+      :thompson => File.readlines(File.join(d, "thompson.txt")),
     }
   end
 
