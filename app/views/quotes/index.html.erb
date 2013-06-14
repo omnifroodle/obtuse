@@ -1,7 +1,23 @@
 <h1 class="random-quote">
-<% @quote.each do |o| %>
+
+  <% o = @quote.pop %>
+
   <span class=<%= o.source.to_s %> data-index=<%= o.index %>>
     <%= o.text%>
+
+  <% @quote.each do |o| %>
+
+    <% if should_close_span(o) %>
+      </span>
+      <span class=<%= o.source.to_s %> data-index=<%= o.index %>>
+    <% end %>
+
+    <%= o.text%>
+
+    <%#= o.index %>
+    <% @previous_source = o.source %>
+    <% @previous_index = o.index %>
+  <% end %>
   </span>
-<% end %>
+
 </h1>
