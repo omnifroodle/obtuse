@@ -31,6 +31,7 @@ class WitticismsController < ApplicationController
     @witticism.quote = params['witticism']['quote']
     respond_to do |format|
       if @witticism.save
+        # add chappelle, kaufman, and mitch hedburg
         logger.info((@witticism.id.to_s + " ") * 10)
         format.html { redirect_to @witticism, notice: 'Witticism was successfully created.' }
         format.json { render action: 'show', status: :created, location: @witticism }

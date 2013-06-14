@@ -14,6 +14,8 @@ class Markov
       :random_design => File.readlines(File.join(d, "random_design.txt")),
       :sagmeister => File.readlines(File.join(d, "sagmeister.txt")),
       :thompson => File.readlines(File.join(d, "thompson.txt")),
+      :tao_te_ching => File.readlines(File.join(d, "tao-te-ching.txt")),
+      :wilde => File.readlines(File.join(d, "wilde.txt")),
     }
   end
 
