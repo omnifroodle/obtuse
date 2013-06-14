@@ -77,6 +77,9 @@ body { margin: 0; background: #777;}
     -webkit-text-stroke-color: black;
     position: relative;
   }
+  span:nth-child(even):before {
+    top: 72px;
+  }
 
   .herzog {
     @include quote_text(rgba(#000fff, 0.7), blue, "Herzog");
