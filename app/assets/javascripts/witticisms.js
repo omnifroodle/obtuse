@@ -14,7 +14,8 @@ if ($random.length) {
 function createWitticism(){
   var foo = $("#hidden-dragon").text();
   $.post("/witticisms", {"witticism": {"quote": foo}}).done(function(data){
-    alert("weee");
+    $(".save_button").text("Saved!").addClass("active");
+    return false;
   });
   return false;
 }

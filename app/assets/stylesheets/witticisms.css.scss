@@ -82,12 +82,12 @@ body { margin: 0; background: #777;}
   }
 
   .herzog {
-    @include quote_text(rgba(#000fff, 0.7), blue, "Herzog");
+    @include quote_text(rgba(#000fff, 0.7), white, "Herzog");
   }
 
   .oblique_strategies {
     @include quote_text(rgba(#38D8D8, 0.7), blue, "Oblique");
- }
+  }
 
   .random_design {
     @include quote_text(rgba(#FF976B, 0.7), blue, "Rams");
@@ -130,5 +130,9 @@ body { margin: 0; background: #777;}
       background-color: #fff;
       color: #000;
     }
+  }
+  .active {
+    background-color: #fff;
+    color: #000;
   }
 }
