@@ -105,8 +105,10 @@ body { margin: 0; background: #777;}
 #hidden-dragon { display: none; }
 
 .buttons {
-  margin: 12% 0 0;
+  margin: 12% auto 0 auto;
   padding: 0;
+  width: 600px;
+  text-align: center;
   li {
     list-style: none;
     display: inline-block;
