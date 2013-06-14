@@ -23,17 +23,22 @@ class Markov
       puts k
       strs = v
       strs = Array(strs)
+      strs.sort!{|a,b| a.length <=> b.length}
       words = strs.flatten.join(" ")
       words = words.gsub(/[\.\?\(\)\[\]\,\-`"]/, " ")
       words = words.split
       words = words.map(&:downcase)
       len = words.count - 1
+      max_ind = 0
       words.each_with_index do |word, index|
+        next if index > 1000
         if index < len
           foo = OpenStruct.new({:text => words[index + 1], :source => k, :index => index})
           word_hash[word] << foo
         end
+        max_ind = index
       end
+      puts k, max_ind
     end
   end
 
