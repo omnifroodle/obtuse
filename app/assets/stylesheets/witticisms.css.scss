@@ -112,10 +112,18 @@ body { margin: 0; background: #777;}
     display: inline-block;
   }
   a {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #fff;
-    width: 120px;
+    width: 200px;
     display: inline-block;
     text-align: center;
+    background: rgba(0,0,0,0.2);
+    padding: 20px 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
 }

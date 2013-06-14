@@ -1,4 +1,5 @@
 
+
 <div id='hidden-dragon'>
   <%= @quote.map{|x| x.text}.join(" ") %>
 </div>
@@ -28,9 +29,7 @@
 
 </h1>
 
-
-
 <ul class="buttons">
-<li><%= link_to "Save", '#', :onclick => 'createWitticism()' %></li>
-<li><%= link_to "Refresh", "/" %></li>
+  <li><%= link_to "&#x2713;".html_safe, '#', :onclick => 'createWitticism()' %></li>
+  <li><%= link_to "&#x2717;".html_safe, "/" %></li>
 </ul>
