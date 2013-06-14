@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body { margin: 0; }
+body { margin: 0; background: #777;}
 
 .witticism-container {
   display: table;
@@ -62,23 +62,59 @@ body { margin: 0; }
     color: rgba(0,0,0,0);
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+    position: relative;
   }
 
   .herzog {
     background: rgba(#000fff, 0.8);
     -webkit-text-stroke-color: white;
+   &:before {
+    position: absolute;
+    opacity: 0.4;
+    top: -72px;
+    left: 0;
+        -webkit-text-stroke-color: blue;
+
+    content:   "Herzog";
+   }
   }
 
   .oblique_strategies {
     background: rgba(#38D8D8, 0.8);
        -webkit-text-stroke-color: white;
+   &:before {
+    position: absolute;
+    opacity: 0.4;
+    top: -72px;
+    left: 0;
+        -webkit-text-stroke-color: blue;
 
+    content:   "Oblique";
+   }
   }
 
   .random_design {
     background: rgba(#FF976B, 0.8);
+    &:before {
+      position: absolute;
+      opacity: 0.4;
+      top: -72px;
+      left: 0;
+          -webkit-text-stroke-color: blue;
+
+      content:   "Rams";
+    }
   }
   .sagmeister {
-    background: rgba(orange, 0.8);
+    background: rgba(255, 0, 31, 0.8);
+   &:before {
+      position: absolute;
+      opacity: 0.4;
+      top: -72px;
+      left: 0;
+          -webkit-text-stroke-color: blue;
+
+      content:   "Sagmeister";
+    }
   }
 }
