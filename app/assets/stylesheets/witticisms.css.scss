@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body { margin: 20px 0; }
+body { margin: 0; }
 
 .witticism-container {
   display: table;
@@ -50,30 +50,35 @@ body { margin: 20px 0; }
 
 
 .random-quote {
+  margin-top: 13.3%;
   font-size: 9.2em;
   font-weight: 300;
+  line-height: 1.1;
 
   span {
     background: rgba(0,0,0,0.2);
-    padding: 5px 30px;
-    display: inline-block;
+    padding: 30px 30px -20px;
+    display: inline;
     color: rgba(0,0,0,0);
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
   }
 
   .herzog {
-    background-color: red;
+    background: rgba(#000fff, 0.8);
+    -webkit-text-stroke-color: white;
   }
 
   .oblique_strategies {
-    background: #000;
+    background: rgba(#38D8D8, 0.8);
        -webkit-text-stroke-color: white;
 
   }
 
   .random_design {
-    background: #555;
+    background: rgba(#FF976B, 0.8);
   }
-
+  .sagmeister {
+    background: rgba(orange, 0.8);
+  }
 }
