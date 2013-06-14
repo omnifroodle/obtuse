@@ -21,3 +21,9 @@
   </span>
 
 </h1>
+
+<div style='display:none' id='hidden-dragon'>
+  <%= @quote.map{|x| x.text}.join(" ") %>
+</div>
+
+<%= link_to "Save", '#', :onclick => 'createWitticism()' %>
