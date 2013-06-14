@@ -1,14 +1,4 @@
 
-
-<div id='hidden-dragon'>
-  <%= @quote.map{|x| x.text}.join(" ") %>
-</div>
-
-
-<script>
-  var quote = <%= @save_quote.to_json.html_safe %>
-</script>
-
 <h1 class="random-quote">
 
   <% o = @quote.shift %>
@@ -32,8 +22,3 @@
   </span>
 
 </h1>
-
-<ul class="buttons">
-  <li><%= link_to "&#x2713;".html_safe, '#', :onclick => 'createWitticism()', :class => "save_button" %></li>
-  <li><%= link_to "&rarr;".html_safe, "/" %></li>
-</ul>

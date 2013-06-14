@@ -28,7 +28,7 @@ class WitticismsController < ApplicationController
   # POST /witticisms.json
   def create
     @witticism = Witticism.new(witticism_params)
-
+    @witticism.quote = params['witticism']['quote']
     respond_to do |format|
       if @witticism.save
         format.html { redirect_to @witticism, notice: 'Witticism was successfully created.' }
