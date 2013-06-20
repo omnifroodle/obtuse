@@ -1,0 +1,4 @@
+Six rules apply to inferences various kinds: "1. What is false does not follow from what is true. 2. What is true may follow from what is false. 3. Whatever follows from the consequent follows from the antecedent. 4. Whatever entails the antecedent entails the consequent. 5. The contingent does not follow from the necessary. 6. The impossible does not follow from the possible. Many of Ockham s rules derive from earlier philosophers, but he was the first to set them out systematically, and they were generally accepted by later logicians." (Quoted from Kenny)
+General terms (e.g. duck, attic, prayer) are equivalent to lists of proper names. Proper names refer to individual things. Only individuals exist.
+There are two classes of rights: those that you can forfeit (such as the right to private property) and those that are inalienable (such as your right to live).
+Only two of the ten Aristotelian categories are legitmate: substance and quality.

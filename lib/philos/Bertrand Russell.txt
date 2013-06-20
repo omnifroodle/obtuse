@@ -1,0 +1,10 @@
+Motivated behavior is controlled by a negative feedback cycle, where desire determines the equilibrium condition. 
+Objects cause sense-data, but are distinct from them.
+Logical atomism: Statements about objects reduce to statements about sensory experience, because physical objects are logically constructed out of sense-data. Atomic facts correspond to simple propositions. Atomic facts hold when a particular possesses a characteristic, or a relation exists between two or more particulars. Once logic has been properly formulated it will reveal the structure of the world.
+There is a changeable world of existence (inhabited by sense-data, thoughts, and feelings), and a supra-sensible, unchangeing world of being inhabited by universals.
+Sense-data (the contents of perceptual experience) and the objects that cause them can be distinguished in terms of knowledge by acquaintance and knowledge by description. We have knowledge by acquaintance of thing (e.g. a table), non-inferentially, via our sense-data of the thing. We have knowledge by description of objects as such (a table as a table) via our acquaintance with our sense-data. We can doubt the presence of the table, but not the presence of the sense-data.
+It is often easier to find out whether p is true than whether it is good to believe that p.
+Russell's Paradox: Naive set theory is inconsistent, insofar as it permits the construction of classes of classes that are not members of themselves. Any such class will simultaneously be a member of itself and not a member of itself.
+Mathematics and logic are identical.
+Knowledge of mathematical truths is not empirical.
+Definite descriptions (e.g. 'the President of the United Nations', 'the cat') are not to be treated in the same manner as names. Genuine names simply refer to their objects, while definite descriptions assert the existence of their objects and attribute properties to those objects

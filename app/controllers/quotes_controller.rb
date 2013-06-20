@@ -1,7 +1,7 @@
 class QuotesController < ApplicationController
 
   def index
-    size = rand(8)
+    size = rand(4) + 4
     @quote = Markov.new.gimme(size)
     @save_quote = {}
       @quote.each_with_index{|x, idx| @save_quote[idx] = {:text => x.text, :source => x.source, :index => x.index} }

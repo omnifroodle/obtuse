@@ -1,0 +1,1 @@
+Some predictions are neither true nor false, but instead have a third truth-value, neutral.

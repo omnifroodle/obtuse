@@ -1,0 +1,3 @@
+Neutral monism: mind and matter consist of the data of the senses.
+The natural number series can be continued ad infinitum only if the number of objects in the universe is itself infinite. The number of objects in the universe is not finite.
+Classes are not arbitrarily classifiable objects, e.g. no class can contain members defined in terms of itself, or in other words, there are no self-referring classes such as the class of classes that does not contain itself.

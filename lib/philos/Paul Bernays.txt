@@ -1,0 +1,1 @@
+The propositional system of Principia Mathematica is consistent, four of its axioms are independent of each other, and the fifth is deducible as a thesis from the remaining four.

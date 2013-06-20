@@ -1,0 +1,4 @@
+False sentences signify the state of affairs which, if they obtained, would make the sentence true.
+Logic is the art of distinguishing between valid and invalid arguments.
+Exists can be replaced by a quantifier plus a verb.
+There are two ways to predicate possibility: de sensu (now called de dicto) and de re. Consider the proposition, It is possible for the king not to be king. On the de sensu interpretation, the proposition would be: The king is not the king is possibly true. This is false. On the de re reading, the proposition would be: the king may be deposed. This could be true.

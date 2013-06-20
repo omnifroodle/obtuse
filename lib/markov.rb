@@ -6,6 +6,12 @@ class Markov
 
   def srcs
     d = File.expand_path File.dirname(__FILE__)
+    philos = Dir.entries(d + "/philos").reject{|x| x == "." || x == '..'}
+    foo = {}
+    philos.each do |x|
+      f = File.basename(x, ".txt")
+      foo[f.intern] = File.readlines(File.join(d,"philos",x))
+    end
     {
       :bjork => File.readlines(File.join(d, 'bjork.txt')),
       :herzog => File.readlines(File.join(d, 'herzog.txt')),
@@ -16,7 +22,7 @@ class Markov
       :thompson => File.readlines(File.join(d, "thompson.txt")),
       :tao_te_ching => File.readlines(File.join(d, "tao-te-ching.txt")),
       :wilde => File.readlines(File.join(d, "wilde.txt")),
-    }
+    }.merge(foo)
   end
 
   def initialize

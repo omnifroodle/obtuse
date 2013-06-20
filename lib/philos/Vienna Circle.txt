@@ -1,0 +1,2 @@
+Verificationism: the meaning of a proposition is the manner in which it is shown to be true. If it cannot be decided how a proposition would be shown to be true, the proposition is meaningless. Many metaphysical theses are consequently meaningless.
+Mathematical truths are necessary because they are true by definition. By themselves, they don't tell us anything about the world. Knowledge about the world comes from experience.

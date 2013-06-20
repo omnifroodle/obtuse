@@ -1,0 +1,1 @@
+The only kind of implication is strict implication: p implies q only if q couldn't be false when p is true.

@@ -1,0 +1,3 @@
+When A and B are identical, what is true of A is true of B and vice versa (Leibniz's Law). If whatever is true of A is true of B, and vice versa, then A is identical with B. (the Identity of Indiscernibles).
+Necessary truths are truths by definition: when a truth is necessary, the reason for it can be found by analysis, that is, by resolving it into simpler ideas and truths until the primary ones are reached.
+Principle of Sufficient Reason: Everything is the way  that it is, rather than some other way, for a reason.

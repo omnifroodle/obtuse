@@ -1,0 +1,1 @@
+Arithmetic is not a complete system, nor can it be turned into a complete system. There will always be statements about arithmetic that cannot be proved from within arithmetic. Arithmetic cannot be reduced to first-order logic.
